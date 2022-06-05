@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>通用管理后台</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      href="../images/login_background.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/icons.min.css" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/typicons.min.css" />
+  </head>
+  <body ng-app="myApp" ng-controller="loginCtrl">
+    <div id="preloader">
+      <div id="status"><div class="spinner"></div></div>
+    </div>
+    <div class="text-center login_div">
+      <form>
+        <img
+          class="mb-4"
+          src="../images/login1.jpg"
+          alt=""
+          style="border-radius: 20px; width: 100%"
+          align="center"
+        />
+        <h1 class="h3 mb-3 font-weight-normal login_div_h1">通用管理后台</h1>
+        <label for="username" class="sr-only">username</label>
+        <input
+          type="text"
+          id="username"
+          class="form-control mt-5"
+          placeholder="输入用户名"
+          autofocus
+          ng-model="username"
+          ng-keyup="loginKeyup($event)"
+        />
+        <label for="password" class="sr-only mt-3">password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control mt-3"
+          placeholder="输入密码"
+          ng-model="password"
+          ng-keyup="loginKeyup($event)"
+        />
+        <button
+          class="btn btn-lg btn-primary btn-block mt-3"
+          type="submit"
+          ng-click="fn_login()"
+        >
+          登 录
+        </button>
+      </form>
+      <div
+        id="showAlert"
+        class="mt-4 alert alert-warning alert-dismissible fade"
+        role="alert"
+      >
+        <strong>错误提示 : {{alertText}}</strong>
+      </div>
+      <p class="mt-5 mb-3 text-muted copyright">
+        &copy; 2018-2019 TunnelHunter
+      </p>
+    </div>
+  </body>
+  <script src="../js/jquery.slim.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/angular_and_angular-router.js"></script>
+  <script src="../js/carnival_concat.min.js"></script>
+</html>

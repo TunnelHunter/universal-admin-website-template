@@ -1,0 +1,46 @@
+<div class="left side-menu">
+  <button
+    type="button"
+    class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect"
+  >
+    <i class="ion-close"></i>
+  </button>
+  <div class="topbar-left">
+    <div class="text-center">
+      <div class="logo"><i class="mdi mdi-assistant"></i>通用管理后台</div>
+    </div>
+  </div>
+  <div class="sidebar-inner slimscrollleft">
+    <div id="sidebar-menu">
+      <ul>
+        <li>
+          <a class="waves-effect" ng-click="fn_go_page($event,0)"
+            ><i class="fa fa-check"></i
+            ><span> 已选题目 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="badge badge-primary badge-pill"
+              >{{selectedNumber}}</span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="waves-effect" ng-click="fn_go_page($event,1)"
+            ><i class="fa fa-list-alt"></i
+            ><span> 全部题目 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="badge badge-primary badge-pill">{{allNumber}}</span></a
+          >
+        </li>
+        <li>
+          <a class="waves-effect" ng-click="fn_go_page($event,2)"
+            ><i class="fa fa-plus-circle"></i><span> 新增题目</span></a
+          >
+        </li>
+        <li>
+          <a class="waves-effect" ng-click="fn_go_page($event,3)"
+            ><i class="fa fa-sign-out"></i><span> 退 出</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
