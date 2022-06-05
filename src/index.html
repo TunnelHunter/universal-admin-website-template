@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>通用管理后台</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link rel="icon" href="./images/login_background.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/typicons.css" />
+  </head>
+  <body ng-app="myApp" class="fixed-left">
+    <div ng-include="'html/alertModel.html'"></div>
+    <div id="preloader">
+      <div id="status"><div class="spinner"></div></div>
+    </div>
+    <div id="wrapper">
+      <common-left-menu
+        selected-number="var_selectedNumber"
+        all-number="var_allNumber"
+      ></common-left-menu>
+      <div ng-view></div>
+    </div>
+  </body>
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular_and_angular-router.js"></script>
+  <script src="js/carnival_concat.min.js"></script>
+  <script src="js/echarts.min.js"></script>
+</html>

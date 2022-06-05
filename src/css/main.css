@@ -1,0 +1,119 @@
+table {
+    word-break:break-all;
+    word-wrap:break-word
+}
+
+
+.login_div {
+    width: 30%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.login_div_h1{
+    color: #2d3b48 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em;
+}
+.search-input {
+    font-weight: 700 !important;
+}
+
+.loading_comment {
+    animation: loading_animation 1300ms;
+}
+
+.table_title_font {
+    font-size: 17px!important;
+    font-weight: 700;
+    color: #2d3b48e8;
+}
+.table_top_title {
+    font-weight: 700;
+    color: #5b6be8;
+}
+.popover {
+    border-radius: .8rem!important;
+}
+.table_header_font {
+    font-weight: 700;
+    color: #2d3b48;
+}
+
+.button-disabled {
+    color: #fff!important;
+    background-color: #c1c1c1!important;
+    border-color: #c1c1c1!important;
+    pointer-events: none;
+    cursor:not-allowed;
+}
+.button-disabled:hover {
+    color: #fff!important;
+    background-color: #c1c1c1!important;
+    border-color: #c1c1c1!important;
+    pointer-events: none;
+    cursor:not-allowed;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 1%;
+    width: 30%;
+}
+
+.content {
+    margin-bottom: 0px !important;
+}
+
+.add-new-title {
+    padding: 10px 0!important;
+    color: #eff3f6;
+}
+
+.alert-primary {
+    color: #ffffffe8;
+    background-color: #5b6be8;
+    font-size: 1.1em;
+    letter-spacing: 6px;
+}
+
+.alert-warning {
+    color: #dca637;
+    background-color: #fce9c1;
+    font-size: 1.1em;
+    letter-spacing: 6px;
+}
+
+.alert-danger {
+    font-size: 1.1em;
+    letter-spacing: 6px;
+}
+.echarts-header {
+    font-weight: 700;
+    font-size: 1em!important;
+    letter-spacing: 2px;
+    color: #2d3b48;
+}
+
+.app-search div {
+    position: absolute;
+    top: 18px;
+    left: 350px;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    width: 34px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.page-title {
+    font-weight: 700;
+}
+
+@keyframes loading_animation {
+    0%   {opacity:1.0;}
+    25%  {opacity:0.7;}
+    50%  {opacity:0.3;}
+    100% {opacity:0.0;}
+}
